@@ -14,21 +14,22 @@ public class Contador {
 			try {
 				int contar = Contador.contar(parametroUm, parametroDois);
 				System.out.println(contar);
-
-			} catch (Exception e) {
+				} 
+				catch (Exception e) 
+				{
 				System.out.println("O segundo parâmetro deverá ser maior que o primeiro");
-			}
+				}
 		}
 	}
 
-	 static int contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+	static int contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
 		if(parametroDois < parametroUm)
 	        throw new ParametrosInvalidosException();
 
 		int resultado = parametroDois - parametroUm;
 		for (int unidade = 0; unidade < resultado; unidade++) {
 
-			System.out.println("Imprimindo o número " + unidade);
+		System.out.println("Imprimindo o número " + unidade);
 		}return resultado;
 		
 	}
